@@ -1,0 +1,87 @@
+JOIN
+
+<!DOCTYPE html>
+<meta charset="UTF-8"/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+
+
+<html>
+    <html>
+        <style>
+            html, body { margin: 0; padding: 0; height: 100%; }
+            header { width: 100%; height: 15%; }
+            nav { width: 20%; height: 70%; float: left; }
+            section { width: 60%; height: 70%; float: left; background-color: #ede5d0; text-align: center;}
+            aside { width: 20%; height: 70%; float: left; }
+            footer { width: 100%; height: 15%;  }
+            </style>
+             <script>
+                function showPopup(){ //팝업창
+                    window.open("회원가입 완료.html","팝업 테스트","width=400, height=300, top=10, left=10");
+                }
+                
+            </script>
+    <head></head>
+        <title> 회원가입 창 </title>
+        <body>
+            <header class="header">           </header> 
+            <nav class="nav">  </nav>
+            <section class="section"><p>
+        
+        <form name="login" method="get" action="123.html"> 
+            
+            <fieldset>
+                <legend><h1>회원가입</h1></legend>
+                <table>
+                    <tr>
+                        <td>
+                        이름 :</td>
+                        <td><input type="text" size="15"></td>
+                        <td></td>
+                        
+                    <tr>
+                        <td>
+                        학교메일(ID) :</td>
+                        <td><input type="text" size="15"></td>
+                        <td></td>
+                        
+                    <tr>
+                        <td>
+                        학과 :</td>
+                        <td><input type="text" size="15"></td>
+                        <td></td>
+                             
+                    <tr>
+                        <td>
+                        학년 :</td>
+                        <td><input type="text" list="grade"><br>
+                            <datalist id="grade">
+                                    <option value="1">
+                                    <option value="2">
+                                    <option value="3">
+                                    <option value="4">
+                                    </datalist></td>
+                                    <td></td>
+                                 
+                    <tr>
+                        <td>
+                        전화번호 :</td>
+                        <td><input type="text" size="15"></td>
+                            <td></td>                   
+                    <tr>
+                        <td>
+                        PW :</td> 
+                        <td><input type="password"size="15" value="" placeholder=""></td>               
+                    <tr>
+                        <td><input type="button" value="회원가입 완료" onclick="showPopup()"> </td>
+                    <tr>
+                        <td>
+                            <a href="로그인.html" target="_self">로그인 창으로</a></td>   
+
+            </section>
+            <aside class="aside"></aside>
+            <footer class="footer"></footer>
+
+    
+        </body>
+        </html>

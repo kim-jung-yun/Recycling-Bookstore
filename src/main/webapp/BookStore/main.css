@@ -1,0 +1,93 @@
+@charset "EUC-KR";
+#fixed-bar {
+    width: 100%;
+    background-color: #fff;
+}
+#fixed-bar #fixed-bar-wrap {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 16px 0;
+  }
+#fixed-bar #fixed-bar-wrap #fixed-bar-logo-title {
+    display: inline-block;
+    margin-right: 32px;
+}
+#fixed-bar #fixed-bar-wrap #fixed-bar-logo-title .fixed-logo {
+    width: 120px;
+    margin-bottom: 5px;
+    vertical-align: text-bottom;
+}
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    border: 0;
+}
+#fixed-bar #fixed-bar-wrap #fixed-bar-search {
+    flex: 1;
+}
+#fixed-bar #fixed-bar-wrap #fixed-bar-search .search-input-wrap {
+    display: flex;
+    max-width: 400px;
+    height: 40px;
+    justify-content: space-between;
+    padding: 0 1.6rem;
+    border-radius: 5px;
+    border: solid 1px #e9ecef;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+#fixed-bar #fixed-bar-wrap #fixed-bar-search .search-input-wrap .fixed-search-input {
+    display: block;
+    width: 100%;
+    border: none;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    color: #212529;
+    background-color: transparent;
+}
+#fixed-bar #fixed-bar-wrap #fixed-bar-search .search-input-wrap #header-search-button {
+    border: none;
+    margin: 0;
+    background-color: transparent;
+}
+#fixed-bar #fixed-bar-wrap #fixed-bar-search .search-input-wrap .fixed-search-icon {
+    width: 19px;
+    height: 19px;
+    fill: #868e96;
+    padding: 1rem 0;
+}
+#fixed-bar #fixed-bar-wrap .fixed-bar-menu {
+    display: flex;
+    font-family: Noto Sans KR;
+    color: #4D5159;
+}
+#fixed-bar #fixed-bar-wrap .fixed-bar-menu .fixed-download-wrapper {
+    position: relative;
+    display: inline-block;
+    margin-right: 10px;
+}
+a {
+    -webkit-tap-highlight-color: rgba(73,80,87,0.05);
+}
+#fixed-bar #fixed-bar-wrap .fixed-bar-menu .chat-button span.button-text {
+    color: #4D5159;
+    font-size: 16px;
+}
+#fixed-bar #fixed-bar-wrap .fixed-bar-menu .chat-button {
+    margin: 0;
+    width: 120px;
+    height: 40px;
+    border: 1px solid #D1D3D8;
+    box-sizing: border-box;
+    border-radius: 6px;
+    font-size: 0;
+}

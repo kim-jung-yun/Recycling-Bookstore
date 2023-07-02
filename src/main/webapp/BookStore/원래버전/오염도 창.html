@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<meta charset="UTF-8"/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+
+
+<html>
+    <style>html, body { margin: 0; padding: 0; height: 100%; }
+        header { width: 100%; height: 15%; }
+        nav { width: 20%; height: 70%; float: left; }
+        section { width: 60%; height: 70%; float: left; background-color: #ede5d0; text-align: center;}
+        aside { width: 20%; height: 70%; float: left; }
+        footer { width: 100%; height: 15%; ; }
+  
+      
+      img {
+        width: 70px;
+        height: 70px;
+      }
+      
+      .real-upload {
+      display: none;
+    }  
+
+      .upload {
+        width: 100px;
+        height: 100px;
+        background-color: darkmagenta;
+             
+      }
+  
+      .image-preview {
+        width: 700px;
+        height: 70px;
+        background-color: #ede5d0;
+        display: flex;
+        gap: 20px;
+      }
+      .uploads{
+        width: auto;
+        height: 100px;
+        display: grid;
+        margin: 0%;
+      }
+      </style>
+
+<head><title>오염도 창</title></head>
+<body>
+  <script>
+    function showPopup(){ //팝업창
+        window.open("오염도 등록.html","팝업 테스트","width=400, height=300, top=10, left=10");
+    }
+</script>
+<h3>책 오염도를 체크하세요</h3>
+<head></head> 
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <body>
+            <header class="header"></header> 
+            <nav class="nav"></nav>
+            <section class="section"><p>                
+            <fieldset>
+                <legend><h1>도서 등록을 솔직하게 해주세요.</h1></legend>
+                <input type="file" class="real-upload" accept="image/*" required multiple> 
+                <div class="upload"></div>
+                <ul class="image-preview"></ul>
+               <script>
+                  function getImageFiles(e) {
+                    const uploadFiles = [];
+                    const files = e.currentTarget.files;
+                    const imagePreview = document.querySelector('.image-preview');
+                    const docFrag = new DocumentFragment();
+              
+                    [...files].forEach(file => {
+                      if (!file.type.match("image/.*")) {
+                        alert('이미지 파일만 업로드가 가능합니다.');
+                        return
+                      }
+              
+                      if ([...files].length < 7) {
+                        uploadFiles.push(file);
+                        const reader = new FileReader();
+                        reader.onload = (e) => {
+                          const preview = createElement(e, file);
+                          imagePreview.appendChild(preview);
+                        };
+                        reader.readAsDataURL(file);
+                      }
+                    });
+                  }
+              
+                  function createElement(e, file) {
+                    const li = document.createElement('li');
+                    const img = document.createElement('img');
+                    img.setAttribute('src', e.target.result);
+                    img.setAttribute('data-file', file.name);
+                    li.appendChild(img);
+                    return li;
+                  }
+              
+                  const realUpload = document.querySelector('.real-upload');
+                  const upload = document.querySelector('.upload');
+              
+                  upload.addEventListener('click', () => realUpload.click());
+              
+                  realUpload.addEventListener('change', getImageFiles);
+                </script>
+    <form>
+		<table>
+		
+      <tr>
+        <td colspan="2"><strong>필기한 흔적</strong></td></tr>
+		<tr>
+			<td><label>밑줄<input type="checkbox" name="c" value="1"></label></td>
+			<td><label>필기<input type="checkbox" name="c" value="2" checked></label></td>
+		</tr>
+
+		<tr>
+            <td colspan="2"><strong>훼손 범위</strong></td></tr>
+            <td><label>이름표기<input type="checkbox" name="c" value="1"></label></td>
+			<td><label>겉표지 깨끗<input type="checkbox" name="c" value="2" checked></label></td>
+            <td><label>페이지 훼손 없음<input type="checkbox" name="c" value="3" checked></label></td>
+		</tr>
+    <thread>     
+              <input type="button"  class = ".uploads"  value="오염도 등록하기" onclick="showPopup()"> 
+              <a href="등록창.html" target="_blank">등록 마저하기</a></thread>
+
+		</table>
+            </section>
+            <aside class="aside">
+            </aside>
+            <footer class="footer"></footer>
+
+
+</body>
+</html>
+
+
+
+
+
+    

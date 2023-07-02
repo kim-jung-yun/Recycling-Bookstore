@@ -1,0 +1,134 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+    <head> 
+    <style> 
+      img { width: 70px; height: 70px; }
+      .real-upload {display: none; }  
+      .upload {width: 100px; height: 100px;background-color: darkmagenta;}
+      .image-preview { width: 700px; height: 70px;display: flex;gap: 20px;}
+      .uploads{width: auto;height: 100px;display: grid;margin: 0%;}
+      </style> 
+    </head>
+    
+<body>
+    <script>
+        function showPopup(){ //팝업창
+            window.open("등록완료.html","팝업 테스트","width=400, height=300, top=10, left=10");}
+    </script>
+  <form method="post" action="register_pro.jsp">
+  <table  width=98% height= 10%  >
+    <tr bgcolor="#ede5d0"></tr>
+    <tr><td align=center colspan=2>
+      <br>
+      <h1>도서 등록을 솔직하게 해주세요.</h1>
+    </td></tr>
+    <tr>
+      <td  width=20% height= 70% align=center>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        과목이름 : <input type="text" size="15"><br>
+        책 이름 <input type="text" size="15"><br>
+        책 가격 :<input type="text" size="15"><br>
+        학교 :<input type="text" size="15"><br>
+        학과 :<input type="text" size="15"><br>
+        학년 :<input type="text" list="grade"><br>
+                       <datalist id="grade">
+                       <option value="1">
+                       <option value="2">
+                       <option value="3">
+                       <option value="4">
+                       </datalist>                      
+            <input type="button" value="도서 등록하기" onclick="showPopup()"><br>
+            <a href="목록창.html" target="_blank">목록으로</a><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        </td>
+      <td  width=70% align=center>
+        <script>
+            function showPopup(){ //팝업창
+                window.open("오염도 등록.html","팝업 테스트","width=400, height=300, top=10, left=10");
+            }
+        </script>
+        <h3>책 오염도를 체크하세요</h3>
+        <head></head> 
+                <meta charset="UTF-8">
+                <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <body>
+                    <header class="header"></header> 
+                    <nav class="nav"></nav>
+                    <section class="section"><p>                
+                    <fieldset>
+                      <input type="file" class="real-upload" accept="image/*" required multiple> 
+                        <div class="upload"></div>
+                        <ul class="image-preview"></ul>
+                       <script>
+                          function getImageFiles(e) {
+                            const uploadFiles = [];
+                            const files = e.currentTarget.files;
+                            const imagePreview = document.querySelector('.image-preview');
+                            const docFrag = new DocumentFragment();
+                      
+                            [...files].forEach(file => {
+                              if (!file.type.match("image/.*")) {
+                                alert('이미지 파일만 업로드가 가능합니다.');
+                                return
+                              }
+                      
+                              if ([...files].length < 7) {
+                                uploadFiles.push(file);
+                                const reader = new FileReader();
+                                reader.onload = (e) => {
+                                  const preview = createElement(e, file);
+                                  imagePreview.appendChild(preview);
+                                };
+                                reader.readAsDataURL(file);
+                              }
+                            });
+                          }
+                      
+                          function createElement(e, file) {
+                            const li = document.createElement('li');
+                            const img = document.createElement('img');
+                            img.setAttribute('src', e.target.result);
+                            img.setAttribute('data-file', file.name);
+                            li.appendChild(img);
+                            return li;
+                          }
+                      
+                          const realUpload = document.querySelector('.real-upload');
+                          const upload = document.querySelector('.upload');
+                      
+                          upload.addEventListener('click', () => realUpload.click());
+                      
+                          realUpload.addEventListener('change', getImageFiles);
+                        </script>
+            <form>
+           <table>
+              <tr>
+                <td colspan="2"><strong>필기한 흔적</strong></td></tr>
+                <tr>
+                    <td><label>밑줄<input type="checkbox" name="underline" value="underlinec"></label></td>
+                    <td><label>필기<input type="checkbox" name="notec" value="notec"></label></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><strong>훼손 범위</strong></td></tr>
+                    <td><label>이름표기<input type="checkbox" name="namec" value="namec"></label></td>
+                    <td><label>겉표지 깨끗<input type="checkbox" name="cleanc" value="cleanc"></label></td>
+                    <td><label>페이지 훼손 없음<input type="checkbox" name="pagec" value="pagec"></label></td>
+                    <input type="button"  class = ".uploads"  value="오염도 등록하기" onclick="showPopup()"> 
+        
+                </tr>
+            <thread>     
+                </table>
+      </td>
+    </tr>
+  <tr><td align=center height= 20% colspan=3>
+    <br>
+   
+    <br>
+  </td></tr>
+  </table>
+  </form>
+</body>
+</html>
