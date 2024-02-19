@@ -19,8 +19,8 @@
 ### 1. 회원가입
 + 회원가입 버튼 클릭 시 정보가 회원정보DB에 저장됨<br />
 ![image](https://github.com/kim-jung-yun/Recycling-Bookstore/assets/138330814/8efb7458-5d26-46c0-8086-747aa9c8b3d6)
-+ 중복확인 버튼 클릭 시 이메일 중복확인<br />
-
++ 중복확인 버튼 클릭 시 이메일 중복확인
+<br /><br />
 
 ### 2. 로그인<br />
 ![image](https://github.com/kim-jung-yun/Recycling-Bookstore/assets/138330814/2aef2963-6cc7-4303-bfc3-0ab910641ae4)
