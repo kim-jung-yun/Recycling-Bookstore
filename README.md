@@ -22,10 +22,15 @@
 ![image](https://github.com/kim-jung-yun/Recycling-Bookstore/assets/138330814/24132408-a212-4c57-a299-0a4c93c4de98)
 
 -------
-### 2. 로그인
+### 2. 로그인<br />
+![image](https://github.com/kim-jung-yun/Recycling-Bookstore/assets/138330814/2aef2963-6cc7-4303-bfc3-0ab910641ae4)
 
-### 3. 판매글 작성, 수정, 삭제
-### 4. 중고책 오염도 등록
+### 3. 판매글 작성, 수정, 삭제<br />
+![image](https://github.com/kim-jung-yun/Recycling-Bookstore/assets/138330814/ffca0924-a381-432f-8048-2de95252f1a0)
+
+### 4. 중고책 오염도 등록<br />
+![image](https://github.com/kim-jung-yun/Recycling-Bookstore/assets/138330814/519a799f-f17a-42d6-bc1e-8a0a3e61f21f)
+
 ### 5. 게시글 조회
 ### 6. 상세페이지
 ### 7. 게시글 검색
