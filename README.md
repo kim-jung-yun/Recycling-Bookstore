@@ -1,5 +1,7 @@
 # 프로젝트 소개 
-+ 리사이클링 북스토어
++ 학생들이 원하는 정보인 책상태를 상세하게 포함한 중고책 거래 서비스
++ 백엔드 개발자 2명이서 진행
+
 
 # 프로젝트 개발기간 
 + 2022년 4월 1일 ~ 2022년 6월 20일
@@ -18,8 +20,6 @@
 + 회원가입 버튼 클릭 시 정보가 회원정보DB에 저장됨<br />
 ![image](https://github.com/kim-jung-yun/Recycling-Bookstore/assets/138330814/8efb7458-5d26-46c0-8086-747aa9c8b3d6)
 + 중복확인 버튼 클릭 시 이메일 중복확인<br />
-![image](https://github.com/kim-jung-yun/Recycling-Bookstore/assets/138330814/df3bf2cc-c1dd-4149-a8da-80381c1dfc97)<br />
-![image](https://github.com/kim-jung-yun/Recycling-Bookstore/assets/138330814/24132408-a212-4c57-a299-0a4c93c4de98)
 
 -------
 ### 2. 로그인<br />
