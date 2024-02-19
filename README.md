@@ -24,21 +24,22 @@
 
 ### 2. 로그인<br />
 ![image](https://github.com/kim-jung-yun/Recycling-Bookstore/assets/138330814/2aef2963-6cc7-4303-bfc3-0ab910641ae4)
-<br />
+<br /><br />
 
 ### 3. 판매글 작성, 수정, 삭제<br />
 ![image](https://github.com/kim-jung-yun/Recycling-Bookstore/assets/138330814/ffca0924-a381-432f-8048-2de95252f1a0)
-<br />
+<br /><br />
 
 ### 4. 중고책 오염도 등록<br />
 + 책상태에 따른 오염도 체킹기능으로 오염도 점수 계산<br />
 ![image](https://github.com/kim-jung-yun/Recycling-Bookstore/assets/138330814/519a799f-f17a-42d6-bc1e-8a0a3e61f21f)
-<br />
+<br /><br />
 
-### 5. 게시글 검색 및 조회<br /><br />
+### 5. 게시글 검색 및 조회<br />
 + 해당하는 대학교의 모든 책 거래내역 조회
 + 책이름, 책을 판매하는 학과, 학년 등 검색기능
+<br /><br />
 
-### 6. 상세페이지<br /><br />
+### 6. 상세페이지<br />
 + 판매하는 거래내역의 상세 내용
 + 책사진 및 오염도 상세내용
