@@ -29,7 +29,7 @@
 ![image](https://github.com/kim-jung-yun/Recycling-Bookstore/assets/138330814/ffca0924-a381-432f-8048-2de95252f1a0)
 
 ### 4. 중고책 오염도 등록<br /><br />
-+ 책상태에 따른 오염도 체킹기능으로 오염도 점수 계산
++ 책상태에 따른 오염도 체킹기능으로 오염도 점수 계산<br />
 ![image](https://github.com/kim-jung-yun/Recycling-Bookstore/assets/138330814/519a799f-f17a-42d6-bc1e-8a0a3e61f21f)
 
 ### 5. 게시글 검색 및 조회<br /><br />
